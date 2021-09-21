@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ResolutionAppApplication<resolution-app>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "test.uol.resolutionapp.ResolutionAppApplication",
+            "projectName": "resolution-app",
+            "args": ""
+        }
+    ]
+}
