@@ -68,8 +68,6 @@ public class ResolutionServiceImpl implements ResolutionService {
         if(r.isPresent()){
             repository.deleteById(id);
         }
-        
     }
-
      
 }

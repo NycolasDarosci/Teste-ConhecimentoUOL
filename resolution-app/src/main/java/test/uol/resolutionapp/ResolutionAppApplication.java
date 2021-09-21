@@ -6,7 +6,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import test.uol.resolutionapp.persistence.entity.Resolution;
 import test.uol.resolutionapp.persistence.repository.ResolutionRepository;
 
 @SpringBootApplication
@@ -16,19 +15,15 @@ public class ResolutionAppApplication {
 		SpringApplication.run(ResolutionAppApplication.class, args);
 	}
 
-	CommandLineRunner init(ResolutionRepository repository){
-		return args -> {};
-	}
-
 	/*
-	João
-	Maria
-	Zeca
-	Mario
-	Gustavo
-	Camila
-	Pedro
-	Juliana
-	Gisele 
+		João
+		Maria
+		Zeca
+		Mario
+		Gustavo
+		Camila
+		Pedro
+		Juliana
+		Gisele
 	*/
 }

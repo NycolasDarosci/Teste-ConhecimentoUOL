@@ -1,3 +1,4 @@
+USE test
 INSERT INTO resolution(nome, data) VALUES ("João", "2021-09-21")
 INSERT INTO resolution(nome, data) VALUES ("Maria", "2021-09-21")
 INSERT INTO resolution(nome, data) VALUES ("Zeca", "2021-09-22")
