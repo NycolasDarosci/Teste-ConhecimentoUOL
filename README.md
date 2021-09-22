@@ -14,7 +14,7 @@
 
 #### SCRIPTS
 - se for utilizar em gerenciadores de banco(DBeaver, Mysql Workbench...)
-`
+
 `INSERT INTO resolution(nome, data) VALUES ("João", "20-09");`
 `INSERT INTO resolution(nome, data) VALUES ("Maria", "21-09");`
 `INSERT INTO resolution(nome, data) VALUES ("Zeca", "22-09");`
@@ -24,7 +24,7 @@
 `INSERT INTO resolution(nome, data) VALUES ("Pedro", "28-09");`
 `INSERT INTO resolution(nome, data) VALUES ("Juliana", "29-09");`
 `INSERT INTO resolution(nome, data) VALUES ("Gisele", "30-09");`
-`
+
 - se for testar em softwares de testes API(Postman,Insomnia)...
 
 `{"data": "20-09", "nome": "João"},`
