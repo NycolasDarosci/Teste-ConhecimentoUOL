@@ -18,7 +18,4 @@ export class ResolutionService {
     return this.http.get<Resolution[]>(`${this.resolutionsUrl}/im-day`);
   }
 
-  public addResolution(resolution: Resolution): Observable<Resolution>{
-    return this.http.post<Resolution>(`${this.resolutionsUrl}/im-day/add`, resolution);
-  }
 }
