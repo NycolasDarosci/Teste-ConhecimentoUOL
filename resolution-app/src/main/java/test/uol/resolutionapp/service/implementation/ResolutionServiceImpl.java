@@ -6,6 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javassist.NotFoundException;
 import test.uol.resolutionapp.model.ResolutionRequest;
 import test.uol.resolutionapp.model.ResolutionResponse;
 import test.uol.resolutionapp.persistence.entity.Resolution;
@@ -37,9 +38,8 @@ public class ResolutionServiceImpl implements ResolutionService {
 
     @Override
     public ResolutionResponse listarPorId(Long id) {
-        Resolution identify = repository.findById(id).orElseThrow();
+        return res.map(repository.findById(id).orElseThrow());
 
-        return res.map(identify);
     }
 
     @Override

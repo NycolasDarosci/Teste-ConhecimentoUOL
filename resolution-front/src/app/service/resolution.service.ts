@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Resolution } from '../model/resolution';
+import { environment } from 'src/environments/environment';
 
 
 @Injectable({
@@ -9,17 +10,15 @@ import { Resolution } from '../model/resolution';
 })
 export class ResolutionService {
 
-  private resolutionsUrl: string;
+  private resolutionsUrl = environment.apiUrl;
 
-  constructor(private http: HttpClient) {
-    this.resolutionsUrl = 'http://localhost:8080/im-day'
+  constructor(private http: HttpClient) { }
+
+  public getResolutions(): Observable<Resolution[]> {
+    return this.http.get<Resolution[]>(`${this.resolutionsUrl}/im-day`);
   }
 
-  public findAll(): Observable<Resolution[]> {
-    return this.http.get<Resolution[]>(this.resolutionsUrl);
-  }
-
-  public save(resolution: Resolution){
-    return this.http.post<Resolution>(this.resolutionsUrl, resolution);
+  public addResolution(resolution: Resolution): Observable<Resolution>{
+    return this.http.post<Resolution>(`${this.resolutionsUrl}/im-day/add`, resolution);
   }
 }

@@ -1,6 +1,7 @@
 package test.uol.resolutionapp.model;
 
 import java.time.LocalDate;
+import java.util.Date;
 
 public class ResolutionResponse {
     
@@ -8,7 +9,7 @@ public class ResolutionResponse {
 
     private String nome;
 
-    private LocalDate data;
+    private String data;
 
     public Long getId() {
         return Id;
@@ -22,7 +23,7 @@ public class ResolutionResponse {
         return nome;
     }
 
-    public LocalDate getData() {
+    public String getData() {
         return data;
     }
 
@@ -30,7 +31,7 @@ public class ResolutionResponse {
         this.nome = nome;
     }
     
-    public void setData(LocalDate data) {
+    public void setData(String data) {
         this.data = data;
     }
 }

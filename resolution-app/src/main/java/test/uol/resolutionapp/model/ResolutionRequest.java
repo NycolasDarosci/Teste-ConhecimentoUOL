@@ -1,18 +1,19 @@
 package test.uol.resolutionapp.model;
 
 import java.time.LocalDate;
+import java.util.Date;
 
 public class ResolutionRequest {
     
     private String nome;
 
-    private LocalDate data;
+    private String data;
 
     public String getNome() {
         return nome;
     }
 
-    public LocalDate getData() {
+    public String getData() {
         return data;
     }
 
@@ -20,7 +21,7 @@ public class ResolutionRequest {
         this.nome = nome;
     }
     
-    public void setData(LocalDate data) {
+    public void setData(String data) {
         this.data = data;
     }
 }

@@ -1,6 +1,7 @@
 package test.uol.resolutionapp.persistence.entity;
 
 import java.time.LocalDate;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,6 +9,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonFormat.Shape;
+
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.format.annotation.DateTimeFormat.ISO;
 
 @Entity
 @Table(name = "resolution")
@@ -21,13 +28,14 @@ public class Resolution {
     private String nome;
     
     @Column(nullable = false)
-    private LocalDate data;
+    @JsonFormat(pattern = "dd-MM", shape = Shape.STRING)
+    private String data;
 
     public Resolution() {
         
     }
 
-    public Resolution(Long id, String nome, LocalDate data){
+    public Resolution(Long id, String nome, String data){
         this.Id = id;
         this.nome = nome;
         this.data = data;
@@ -41,7 +49,7 @@ public class Resolution {
         Id = id;
     }
 
-    public void setData(LocalDate data) {
+    public void setData(String data) {
         this.data = data;
     }
 
@@ -49,7 +57,7 @@ public class Resolution {
         this.nome = nome;
     }
 
-    public LocalDate getData() {
+    public String getData() {
         return data;
     }
 

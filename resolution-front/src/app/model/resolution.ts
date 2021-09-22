@@ -1,6 +1,5 @@
-export class Resolution {
-    id: string;
+export interface Resolution {
+    id: number;
     nome: string;
     data: string;
-    
 }

@@ -1,10 +1,48 @@
-USE test
-INSERT INTO resolution(nome, data) VALUES ("João", "2021-09-21")
-INSERT INTO resolution(nome, data) VALUES ("Maria", "2021-09-21")
-INSERT INTO resolution(nome, data) VALUES ("Zeca", "2021-09-22")
-INSERT INTO resolution(nome, data) VALUES ("Mario", "2021-09-23")
-INSERT INTO resolution(nome, data) VALUES ("Gustavo", "2021-09-24")
-INSERT INTO resolution(nome, data) VALUES ("Camila", "2021-09-27")
-INSERT INTO resolution(nome, data) VALUES ("Pedro", "2021-09-28")
-INSERT INTO resolution(nome, data) VALUES ("Juliana", "2021-09-29")
-INSERT INTO resolution(nome, data) VALUES ("Gisele", "2021-09-30")
+
+USE test;
+INSERT INTO resolution(nome, data) VALUES ("João", "20-09");
+INSERT INTO resolution(nome, data) VALUES ("Maria", "21-09");
+INSERT INTO resolution(nome, data) VALUES ("Zeca", "22-09");
+INSERT INTO resolution(nome, data) VALUES ("Mario", "23-09");
+INSERT INTO resolution(nome, data) VALUES ("Gustavo", "24-09");
+INSERT INTO resolution(nome, data) VALUES ("Camila", "27-09");
+INSERT INTO resolution(nome, data) VALUES ("Pedro", "28-09");
+INSERT INTO resolution(nome, data) VALUES ("Juliana", "29-09");
+INSERT INTO resolution(nome, data) VALUES ("Gisele", "30-09");
+
+{
+  "data": "20-09",
+  "nome": "João"
+},
+{
+  "data": "21-09",
+  "nome": "Maria"
+},
+{
+  "data": "22-09",
+  "nome": "Zeca"
+},
+{
+  "data": "23-09",
+  "nome": "Mario"
+},
+{
+  "data": "24-09",
+  "nome": "Gustavo"
+},
+{
+  "data": "27-09",
+  "nome": "Camila"
+},
+{
+  "data": "28-09",
+  "nome": "Pedro"
+},
+{
+  "data": "29-09",
+  "nome": "Juliana"
+},
+{
+  "data": "30-09",
+  "nome": "Gisele"
+}
