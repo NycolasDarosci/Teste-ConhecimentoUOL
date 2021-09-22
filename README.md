@@ -45,3 +45,4 @@
 ### FRONTEND - Angular
 - Primeiro passo é verificar se o Node.js está instalado na sua máquina e possui ela nas variáveis de ambiente.
 - Entrar dentro da pasta *./resolution-front* e executar o comando `npm install node` através do terminal. Dessa forma, irá ser instalado o pacote *node-modules*, necessário para que o Angular funcione e compile; este pacote está contido no arquivo *.gitignore* por causa de sua vasta extensão de arquivos.
+- execute o comando `ng serve` e através do link http://localhost:4200, apresentará uma tabela;
